@@ -1,0 +1,24 @@
+<h1>Books</h1>
+
+<table id="books-table" class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year released</th>
+      <th>Library</th>
+      <th>Author</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each sortedBooks as |book|}}
+      <tr>
+        <td>{{book.title}}</td>
+        <td>{{format-year book.releaseYear}}</td>
+        <td>
+        	{{book.library.name}}
+        </td>
+        <td>{{book.author.name}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
