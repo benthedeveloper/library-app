@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'library-app',
     environment: environment,
-    firebase: 'https://brilliant-heat-7840.firebaseio.com/',
+    firebase: 'ADD_YOUR_FIREBASE_URL_HERE',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
